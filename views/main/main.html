@@ -1,0 +1,587 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Freedom Outlet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../public/css/global.css" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/main-header.css" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/footer.css" />
+    <link href="../../public/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../public/js/slick-1.6.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../../public/js/slick-1.6.0/slick/slick-theme.css"/>
+    <script type="text/javascript" src="../../public/js/slick-1.6.0/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../public/css/main.css" />
+    <style>
+
+    </style>
+
+    </head>
+
+    <body>
+    <header>
+        <div id="main-header">
+            <div class="main-header_actions">
+                <a href="/" id="main-headr__logo"></a>
+                <a href="#" class="mobile_menu"></a>
+            </div>
+                <div id="main-header__middle-wrapper">
+                    <div id="main-header__middle-wrapper_top">
+                        <nav id="header__about-nav">
+                            <ul>
+                                <li><a href="/about" class="header__about-nav_current">О КОМПАНИИ</a></li>
+                                <li><a href="/idea-for-home">ИДЕИ ДЛЯ ДОМА</a></li>
+                                <li><a href="/contacts">КОНТАКТЫ</a></li>
+                            </ul>
+                        </nav>
+                        <a href="#" class="tablet_menu"></a>
+                        <input id="search_box" type="text" placeholder="Поиск" />
+                    </div>
+                    <div id="main-header__middle-wrapper_bottom">
+                        <nav id="header__categories-nav">
+                            <ul>
+                                <li><a href="/products/kitchen">КУХНИ</a></li>
+                                <li><a href="/products/bedroom">СПАЛЬНИ</a></li>
+                                <li><a href="/products/soft">МЯГКАЯ</a></li>
+                                <li><a href="/products/living">ГОСТИНЫЕ</a></li>
+                                <li><a href="/products/dining">СТОЛОВЫЕ</a></li>
+                                <li><a href="/products/chandelier">ЛЮСТРЫ</a></li>
+                                <li><a href="/products/sanitary">САНТЕХНИКА</a></li>
+                                <li><a href="/products/accessories">АКСЕССУАРЫ</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div id="main-headr__user-actions">
+                    <nav id="main-headr__user-actions_enter">
+                        <ul>
+                            <li><a href="#login_modal" class="open_modal">Войти</a></li>
+                            <li><a href="#register_modal" class="open_modal">Регистрация</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" id="main-headr__user-actions_favorites"></a>
+                    <div class="main-headr__user-actions_phone">+38 (067) 329 08 45</div>
+                </div>
+            </div>
+            </header>
+    <!--End Header-->
+    <section class="new-products">
+        <h2>НОВОЕ</h2>
+        <div class="new-products__carousel">
+            <div class="new-products__carousel_item">
+                <div class="product-item_container">
+                    <div class="product-item">
+                    <div id="content_10" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(10)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_10" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(10)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-item_container">
+                    <div class="product-item">
+                    <div id="content_1" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_1" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-item_container">
+                    <div class="product-item">
+                    <div id="content_1" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_1" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                    </div>
+                </div>
+                                <div class="product-item_container">
+                    <div class="product-item">
+                    <div id="content_1" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_1" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                    </div>
+                </div>
+                                <div class="product-item_container">
+                    <div class="product-item">
+                    <div id="content_1" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_1" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                    </div>
+                </div>
+                                <div class="product-item_container">
+                    <div class="product-item">
+                    <div id="content_1" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_1" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                    </div>
+                </div>
+                                <div class="product-item_container">
+                    <div class="product-item">
+                    <div id="content_1" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_1" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                    </div>
+                </div>
+                                <div class="product-item_container">
+                    <div class="product-item">
+                    <div id="content_1" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_1" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                    </div>
+                </div>
+                                <div class="product-item_container">
+                    <div class="product-item">
+                    <div id="content_1" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_1" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                    </div>
+                </div>
+                                <div class="product-item_container">
+                    <div class="product-item">
+                    <div id="content_1" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_1" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Carousel-->
+    <section class="first-outlet">
+        <a href="/products/all">
+            <img src="../../public/img/first-outlet.png">
+        </a>
+    </section>
+    <!--End First-outlet-->
+    <section class="categories">
+        <h2>КАТЕГОРИИ</h2>
+        <div class="categories__grid">
+            <div class="categories__soft">
+                <h3>Мягкая мебель</h3>
+                <a href="/products/all">
+                    <img src="../../public/img/soft-furnishings.png">
+                </a>
+            </div>
+            <div class="categories__bedroom">
+                <h3>Спальни</h3>
+                <a href="/products/all">
+                    <img src="../../public/img/bedroom.png">
+                </a>
+            </div>
+            <div class="categories__living">
+                <h3>Гостиные</h3>
+                <a href="/products/all">
+                    <img src="../../public/img/living-room.png">
+                </a>
+            </div>
+            <div class="categories__dining">
+                <h3>Столовые</h3>
+                    <a href="/products/all">
+                <img src="../../public/img/dining-room.png">
+                </a>
+            </div>
+            <div class="categories__kitchen">
+                <h3>Кухни</h3>
+                <a href="/products/all">
+                    <img src="../../public/img/kitchen.png">
+                </a>
+            </div>
+            <div class="categories__accessories">
+                <h3>Аксессуары</h3>
+                <a href="/products/all">
+                    <img src="../../public/img/accessories.png">
+                </a>
+            </div>
+            <div class="categories__chandeliers">
+                <h3>Люстры</h3>
+                <a href="/products/all">
+                    <img src="../../public/img/chandeliers.png">
+                </a>
+            </div>
+            <div class="categories__sanitary">
+                <h3>Сантехника</h3>
+                <a href="/products/all">
+                    <img src="../../public/img/sanitary.png">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--End Categories-->
+    <section class="about">
+        <h2>О НАС</h2>
+        <div class="about__content">
+            <article class="about__item">
+                <a href="/about">
+                    <div class="about__item_img grow">
+                        <img src="../../public/img/about_img1.png">
+                        <div class="about__item_text">
+                        <span>О КОМПАНИИ</span>
+                        </div>
+                    </div>
+                </a>
+                <p class="fulljustify">
+                    Салон элитных итальянских кухонь в ARDE предлагает
+                </p>
+                <p class="fulljustify">
+                    богатый ассортимент стильных гарнитуров от лучших
+                </p>
+                <a href="/about"><div class="about__item_all">ЧИТАТЬ ВСЕ</div></a>
+            </article>
+            <article class="about__item">
+                <a href="/about">
+                    <div class="about__item_img grow">
+                        <img src="../../public/img/about_img2.png">
+                        <div class="about__item_text">
+                        <span>ИДЕИ ДЛЯ ДОМА</span>
+                        </div>
+                    </div>
+                </a>
+                <p class="fulljustify">
+                    Салон элитных итальянских кухонь в ARDE предлагает
+                </p>
+                <p class="fulljustify">
+                    богатый ассортимент стильных гарнитуров от лучших
+                </p>
+                <a href="/about"><div class="about__item_all">ЧИТАТЬ ВСЕ</div></a>
+            </article>
+        </div>
+    </section>
+    <!--End About-->
+    <section class="contacts">
+        <h2>КОНТАКТЫ</h2>
+        <div class="contacts__cities">
+            <div class="contacts__cities_kyiv">
+                <h4>КИЕВ</h4>
+                <p>FREEDOM INTERIOR<br> пр. Победы, 7<br> +38 044 238 01 81<br> +38 067 325 41 80</p>
+                <p>FREEDOM LUXURY HOME<br> Столичное шоссе, 101,<br> ТЦ "Домосфера"<br> +38 067 468 29 09<br> +38 044 259 31 10</p>
+                <p>Visionnaire Showroom<br> Столичное шоссе, 101,<br> ТЦ "Домосфера"<br> +38 067 571 85 90<br> +38 044 259 31 10</p>
+            </div>
+            <div class="contacts__cities_kyiv">
+                <h4>_</h4>
+                <p>FREEDOM HOUSE<br> Днепровская ноб., 17/2<br> (напротив яхт-клуба)<br> +38 067 328 98 04</p>
+                <p>FREEDOM HOUSE сантехника<br> Днепровская наб., 14, 2 этаж<br> ЖК River Stone<br> +38 067 329 08 16<br>&ensp;</p>
+                <p>FREEDOM HOUSE<br> Столичное шоссе, 101,<br> ТЦ "Домосфера", 2 этаж<br> +38 067 329 08 48</p>
+            </div>
+            <div class="contacts__cities_kharkiv">
+                <h4>ХАРЬКОВ</h4>
+                <p>FREEDOM LUXURY<br> ул. 23 Августа, 29<br> +38 057 751 92 29<br> +38 067 325 41 90</p>
+                <p>FREEDOM<br> ул. Веснина, 5<br> +38 057 757 44 00<br> +38 067 571 75 66<br>&ensp;</p>
+                <p>DOMITALIA<br> пр. Московский, 257<br> +38 057 758 79 97<br> +38 067 539 18 53</p>
+            </div>
+            <div class="contacts__cities_dnepr">
+                <h4>ДНЕПР</h4>
+                <p>FREEDOM ГАЛЕРЕЯ ИНТЕРЬЕРОВ<br> пр. Гагарина 18<br> +38 056 713 55 15<br> +38 067 560 06 82</p>
+            </div>
+        </div>
+    </section>
+    <!--End Contacts-->
+    <section class="map">
+        <img src="../../public/img/map.png">
+    </section>
+    <!--End Map-->
+    <section class="feedback">
+        <h2>СВЯЖИТЕСЬ С НАМИ</h2>
+        <form id="mail-form" action="/mail/send" method="post" name="mailForm" onsubmit="return validateForm()">
+            <input class="neat-input" type="text" name="name" placeholder="ИМЯ" value="" />
+            <input id="tel" class="neat-input" type="text" name="phone" placeholder="+38 (000) 000 00 00" value="" />
+            <textarea class="neat-textarea" name="message" placeholder="СООБЩЕНИЕ" value=""></textarea>
+            <button id="mail-send" class="neat-button" type="submit">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+        </form>
+    </section>
+    <!--End Feedback-->
+    <footer>
+        <div class="footer__wrapper">
+            <a href="/" class="footer__logo"></a>
+            <ul class="footer__products">
+                <li><a href="/products/kitchen">КУХНИ</a></li>
+                <li><a href="/products/bedroom">СПАЛЬНИ</a></li>
+                <li><a href="/products/soft">МЯГКАЯ</a></li>
+                <li><a href="/products/living">ГОСТИНЫЕ</a></li>
+                <li><a href="/products/dining">СТОЛОВЫЕ</a></li>
+                <li><a href="/products/chandelier">ЛЮСТРЫ</a></li>
+                <li><a href="/products/sanitary">САНТЕХНИКА</a></li>
+                <li><a href="/products/accessories">АКСЕССУАРЫ</a></li>
+            </ul>
+            <ul class="footer__contacts">
+                <li><a href="/about" class="header__about-nav_current">О КОМПАНИИ</a></li>
+                <li><a href="/idea-for-home">ИДЕИ ДЛЯ ДОМА</a></li>
+                <li><a href="/contacts">КОНТАКТЫ</a></li>
+            </ul>
+            <div class="footer__wrapper_right-section">
+                <p class="fulljustify">ПЕРВЫЙ МЕБЕЛЬНЫЙ</p>
+                <p class="fulljustify">OUTLET В УКРАИНЕ</p>
+                <ul class="footer__social">
+                    <a href="#"><li class="footer__social_instagram"></li></a>
+                    <a href="#"><li class="footer__social_facebook"></li></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.new-products__carousel_item').slick({
+                infinite:true,
+                // centerMode: true,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                autoplay: false,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: false,
+                centerPadding:0,
+                responsive: [
+                    {
+                        breakpoint: 1380,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 720,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            dots: false
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(window).resize(function () {
+            var categories = $("#main-header__middle-wrapper_bottom");
+            var width = window.innerWidth;
+
+            if (width < 950 || width > 1120) {
+                categories.css("display", "flex");
+            } else {
+                if (width > 950 && width < 1121)
+                    categories.css("display", "none");
+            }
+
+            if (width > 950) {
+                $("#main-header__middle-wrapper").removeClass("display_flex");
+                $("#main-headr__user-actions").removeClass("display_flex");
+            }
+        });
+
+        $(document).ready(function () {
+            $(".tablet_menu").click(function () {
+                $("#main-header__middle-wrapper_bottom").toggle();
+            });
+
+            $(".mobile_menu").click(function () {
+                $("#main-header__middle-wrapper").toggleClass("display_flex");
+                $("#main-headr__user-actions").toggleClass("display_flex");
+            });
+        });
+
+        function toggle_visibility(id) {
+            var content = document.getElementById("content_" + id);
+            var description = document.getElementById("description_" + id);
+            if (content.style.display == 'block') {
+                content.style.display = 'none';
+                description.style.display = 'block';
+            }
+            else {
+                content.style.display = 'block';
+                description.style.display = 'none';
+            }
+        }
+    </script>
+    </body>
+
+    </html>
