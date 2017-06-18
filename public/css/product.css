@@ -1,0 +1,84 @@
+.path,
+.filters,
+.products,
+.paging{
+    width: 100%;
+    max-width: 1435px;
+    margin: auto;
+}
+
+/*End Global*/
+
+.path{
+    margin-top: 55px;
+}
+
+.path ul{
+    display: flex;
+    color: #2a2a2a;
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 14pt;
+}
+
+.path ul li{
+    list-style-type: none;
+    margin-right: 5px;
+}
+
+.path ul li:first-child{
+    color: #9ba3aa;
+}
+
+/*End Path*/
+
+.filters{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 60px;
+}
+
+.filters__select{
+    font-family: 'Roboto Light', sans-serif;
+    color: #2a2a2a;
+    display: flex;
+}
+
+.filters__select_quantity-btn,
+.filters__select_type-btn{
+    height: 45px;
+    padding: 15px;
+    border: 1px solid #e6e8e9;
+    background-color: #f1f3f5;
+    outline-color: #e6e8e9;
+  background-image: url('../img/product/down.png');
+  background-position: right 15px center;
+  background-repeat: no-repeat;
+}
+
+.filters__select_type-btn{
+    width: 215px;
+}
+
+.filters__select_quantity-btn{
+    width: 115px;
+}
+
+/*End Filters*/
+
+.paging ul{
+    display: flex;
+    justify-content: center;
+}
+
+.paging ul li{
+    list-style-type: none;
+}
+
+.paging ul li a{
+    text-decoration: none;
+    color: #2a2a2a;
+    font-family: 'Roboto Light', sans-serif;
+}
+
+/*End Paging*/

@@ -1,0 +1,112 @@
+header {
+    font-family:'Roboto Light', sans-serif;
+    background-color: #2a2a2a;
+    width:100%;
+    height:85px;
+}
+
+#product-header{
+    max-width:1435px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#product-header__logo {
+    float:left;
+    width:219px;
+    height:115px;
+    background: url(../img/logo-products.png) no-repeat center;
+}
+
+#product-header__wrapper,
+#product-headr__actions,
+#product-headr__favorites{
+    margin-top: auto;
+    margin-bottom: 42px;
+}
+
+
+#product-header__wrapper{
+    width: 100%;
+    max-width: 940px;
+    min-width: 750px;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header__categories-nav{
+    max-width: 675px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+}
+
+#header__categories-nav ul {
+    list-style-type: none;
+    width: 100%;
+    max-width: 675px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#header__categories-nav ul li{
+    float:left;
+}
+
+#header__categories-nav ul li a {
+    color:#fff;
+    text-decoration:none;
+    font-size: 12px;
+    letter-spacing: 0px;
+}
+
+#header__categories-nav ul li a:hover {
+    padding-bottom: 14px;
+    border-bottom: 4px solid #ed1c24;
+}
+
+#search_box {
+    height: 30px;
+    background: #e8ebef;
+    background-image: url(../img/product/searchicon.png);
+    background-position-x: 95%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 200px;
+    float: right;
+}
+
+#search_box::-webkit-input-placeholder { 
+    color: #000;
+    padding-left: 10px;
+}
+
+#product-headr__actions {
+    display: flex;
+    width: 24px;
+    height: 22px;
+    background: url(../img/product/profile.png) no-repeat center;
+    margin-left: 45px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+#product-headr__actions:hover {
+    background: url(../img/product/profile_active.png) no-repeat center;
+}
+
+#product-headr__favorites {
+    display: flex;
+    width: 24px;
+    height: 22px;
+    background: url(../img/product/heart.png) no-repeat center;
+    padding-bottom: 5px;
+}
+
+#product-headr__favorites:hover {
+    background: url(../img/product/heart_active.png) no-repeat center;
+}
