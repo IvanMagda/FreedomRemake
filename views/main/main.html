@@ -572,7 +572,7 @@
         function toggle_visibility(id) {
             var content = document.getElementById("content_" + id);
             var description = document.getElementById("description_" + id);
-            if (content.style.display == 'block') {
+            if (content.style.display === 'block' || content.style.display === '') {
                 content.style.display = 'none';
                 description.style.display = 'block';
             }

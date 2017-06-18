@@ -84,6 +84,10 @@ h6{
 
 /*End Global Elements*/
 
+.product-item__main-content{
+    display: block;
+}
+
 .product-item__main-content_heart,
 .product-item__main-content_info {
     cursor: pointer;
@@ -96,6 +100,7 @@ h6{
 .product-item__main-content_info {
     top: 50px;
     left: 301px;
+    z-index: 2;
 }
 
     .product-item__main-content_info .info_img {
@@ -139,9 +144,19 @@ h6{
     margin: 18px 0 9px 0;
 }
 
+.product-item_container{
+    outline: none;
+}
+
 .product-item__description{
     display: none;
     background: #f7f8f8;
+    height: 100%;
+    padding: 10px;
+}
+
+.product-item__description h4{
+    word-wrap: break-word;
 }
 
 .product-item__main-content_close_info{
@@ -507,6 +522,7 @@ form .neat-button{
     margin: 0px auto;
     height: 60px;
     width: 50%;
+    max-width: 310px;
     margin-top: 28px;
     background-color: white;
     border: 1px solid #2a2a2a;
@@ -677,16 +693,36 @@ form .neat-button:hover{
 
     .product-item{
         width: 95%;
-        height: auto;
+        height: 50vw;
     }
 
     .slick-slide img {
         width: 100%;
     }
 
+    .product-item__main-content_close_info img{
+        width: inherit;
+    }
+
     .product-item__main-content_heart,
     .product-item__main-content_info {
         left: 85%;
+    }
+
+    .product-item__description{
+        height: 50vw;
+    }
+
+    .product-item__description h4{
+        font-size: 12pt;
+    }
+
+    .product-item__description h6{
+        font-size: 9pt;
+    }
+
+    .product-item__description p{
+        font-size: 9pt;
     }
 
     .categories__grid{
@@ -786,8 +822,35 @@ form .neat-button:hover{
     }
 }
 
+@media screen and (max-width: 550px){
+    .product-item{
+        height: 60vw;
+    }
+
+
+    .product-item__description h4{
+        font-size: 10pt;
+    }
+
+    .product-item__description h6{
+        font-size: 7pt;
+    }
+
+    .product-item__description p{
+        font-size: 7pt;
+    }
+}
+
 @media screen and (max-width: 485px){
     form .neat-input:first-child {
         margin-right: 0px;
+    }
+
+    .product-item__description h4{
+        font-size: 9pt;
+    }
+
+    .product-item__description h6{
+        font-size: 6pt;
     }
 }
