@@ -48,13 +48,13 @@
     </section>
     <!--End Path-->
     <section class="filters">
-        <h1>Люстры</h1>
+        <h1>ЛЮСТРЫ</h1>
         <div class="filters__select">
             <span>Сортировать по</span>
             <div class="filters__select_type">
                 <button class="filters__select_type-btn">По умолчанию</button>
                 <ul>
-                    <li><a href="#">По умолчанию</a></li>
+                    <li class="active"><a href="#">По умолчанию</a></li>
                     <li><a href="#">Фабрике</a></li>
                     <li><a href="#">Цене</a></li>
                 </ul>
@@ -63,7 +63,7 @@
             <div class="filters__select_quantity">
                 <button class="filters__select_quantity-btn">12</button>
                 <ul>
-                    <li><a href="#">12</a></li>
+                    <li class="active"><a href="#">12</a></li>
                     <li><a href="#">24</a></li>
                     <li><a href="#">48</a></li>
                     <li><a href="#">72</a></li>
@@ -74,29 +74,388 @@
     </section>
     <!--End Filters-->
     <section class="products">
-        <div class="product-item_container">
-            <div class="product-item">
-                <div id="content_10" class="product-item__main-content">
-                    <span class="product-item__main-content_heart">
+        <div class="product-item">
+            <div id="content_1" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
                         <span class="heart"></span>
-                    </span>
-                    <span class="product-item__main-content_info" onclick="toggle_visibility(10)">
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
                         <span class="info_img"></span>
-                    </span>
-                    <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
-                    <hr />
-                    <h4>Диван</h4>
-                    <h6>AGATHA</h6>
-                    <h5>89 000</h5>
-                </div>
-                <div id="description_10" class="product-item__description">
-                    <span class="product-item__main-content_close_info" onclick="toggle_visibility(10)">
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+                <h5>Снижение с 138 000</h5>
+            </div>
+            <div id="description_1" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
                             <img src="../../public/img/cross.png" />
                         </span>
-                    <h4>@{product.name}</h4>
-                    <h6>@{product.manufacturer}</h6>
-                    <p>@{product.description}</p>
-                </div>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_2" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(2)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+                <h5>Снижение с 138 000</h5>
+            </div>
+            <div id="description_2" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(2)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_3" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(3)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+                <h5>Снижение с 138 000</h5>
+            </div>
+            <div id="description_3" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(3)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_4" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(4)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+                <h5>Снижение с 138 000</h5>
+            </div>
+            <div id="description_4" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(4)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_5" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(5)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+                <h5>Снижение с 138 000</h5>
+            </div>
+            <div id="description_5" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(5)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_6" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(6)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+                <h5>Снижение с 138 000</h5>
+            </div>
+            <div id="description_6" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(6)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_7" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(7)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+                <h5>Снижение с 138 000</h5>
+            </div>
+            <div id="description_7" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(7)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_8" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(8)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+                <h5>Снижение с 138 000</h5>
+            </div>
+            <div id="description_8" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(8)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_9" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(9)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+                <h5>Снижение с 138 000</h5>
+            </div>
+            <div id="description_9" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(9)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_10" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(10)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+                <h5>Снижение с 138 000</h5>
+            </div>
+            <div id="description_10" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(10)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_11" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(11)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+                <h5>Снижение с 138 000</h5>
+            </div>
+            <div id="description_11" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(11)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_12" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(12)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+                <h5>Снижение с 138 000</h5>
+            </div>
+            <div id="description_12" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(12)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_13" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(13)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+                <h5>Снижение с 138 000</h5>
+            </div>
+            <div id="description_13" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(13)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_14" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(14)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+                <h5>Снижение с 138 000</h5>
+            </div>
+            <div id="description_14" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(14)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_15" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(15)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+                <h5>Снижение с 138 000</h5>
+            </div>
+            <div id="description_15" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(15)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_16" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(16)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+                <h5>Снижение с 138 000</h5>
+            </div>
+            <div id="description_16" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(16)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
             </div>
         </div>
     </section>
@@ -149,5 +508,30 @@
         </div>
     </footer>
 </body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".filters__select_type-btn").click(function () {
+            $(".filters__select_type ul").toggle();
+        });
+
+        $(".filters__select_quantity-btn").click(function () {
+            $(".filters__select_quantity ul").toggle();
+        });
+    });
+
+    function toggle_visibility(id) {
+        var content = document.getElementById("content_" + id);
+        var description = document.getElementById("description_" + id);
+        if (content.style.display === 'block' || content.style.display === '') {
+            content.style.display = 'none';
+            description.style.display = 'block';
+        }
+        else {
+            content.style.display = 'block';
+            description.style.display = 'none';
+        }
+    }
+
+</script>
 
 </html>
