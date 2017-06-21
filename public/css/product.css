@@ -388,6 +388,9 @@ h5::after{
     h5 {
         font-size: 13pt;
     }
+    h5::after {
+        font-size: 10pt;
+    }
 
     h6{
         font-size: 11pt;
@@ -448,6 +451,9 @@ h5::after{
     h5 {
         font-size: 11pt;
     }
+    h5::after {
+        font-size: 9pt;
+    }
 
     h6{
         font-size: 10pt;
@@ -466,7 +472,72 @@ h5::after{
     /*End Products*/
 }
 
+@media screen and (max-width: 960px){
+    h1{
+        font-size: 20pt;
+    }
+
+    h1::first-letter{
+        font-size: 30pt;
+    }
+
+    .filters__select_quantity-btn,
+    .filters__select_type-btn,
+    .filters__select ul li{
+        font-size: 12pt;
+        height: 35px;
+    }
+
+    .filters__select_type-btn,
+    .filters__select_type ul {
+        width: 200px;
+    }
+
+    .filters__select_quantity-btn,
+    .filters__select_quantity ul {
+        width: 100px;
+    }
+
+    .filters__select_type {
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+}
+
 @media screen and (max-width: 720px){
+    .filters,
+    .filters__select{
+        display: block;
+    }
+
+    .filters__select{
+        position: relative;
+    }
+
+    .filters__select span:first-child{
+        margin-left: 10px;
+    }
+
+    .filters__select span:nth-child(3){
+        margin-left: 80px;
+    }
+
+    .filters__select_type{
+        position: absolute;
+        margin-left: 10px;
+    }
+
+    .filters__select_quantity{
+        margin-left: 230px;
+    }
+
+    h1{
+        display: none;
+    }
+
+
+    /*End Filters*/
+
     .product-item{
         max-width: 220px;
     }
@@ -505,6 +576,9 @@ h5::after{
     h5 {
         font-size: 10pt;
     }
+    h5::after {
+        font-size: 8pt;
+    }
 
     h6{
         font-size: 9pt;
@@ -518,5 +592,42 @@ h5::after{
     .product-item__description h6{
         margin-top: 4px;
         margin-bottom: 9px;
+    }
+
+    /*End Product*/
+
+    .paging {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .path {
+        margin-top: 5px; 
+    }
+}
+
+@media screen and (max-width: 360px){
+    .paging a{
+        font-size: 10pt; 
+    }
+
+    .paging ul li {
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 17px;
+    }
+
+    #paging__forward, #paging__backward,
+    #paging__forward:hover, #paging__backward:hover {
+        width: 10px;
+        height: 17px;
+        background-size: cover;
+        margin-top: 5px;
+    }
+
+    .paging {
+        margin-top: 0px;
     }
 }
