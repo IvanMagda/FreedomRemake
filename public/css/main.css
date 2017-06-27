@@ -1,4 +1,3 @@
-.product-item a,
 .first-outlet a,
 .categories__grid div a,
 .about__item a{
@@ -37,142 +36,28 @@ h2 {
     margin-bottom: 55px;
 }
 
-    h2:first-letter,
-    h4:first-letter {
-        font-size: 150%;
-    }
+h2:first-letter{
+    font-size: 150%;
+}
 
-    h2:after {
-        border-bottom: 2px solid #f00;
-        content: '';
-        display: block;
-        margin: 8pt auto 0pt auto;
-        width: 104px;
-    }
+h2:after {
+    border-bottom: 2px solid #f00;
+    content: '';
+    display: block;
+    margin: 8pt auto 0pt auto;
+    width: 104px;
+}
 
-h3,h4,h5,h6 {
+h3{
     text-transform: uppercase;
 }
 
-h4{
-    font-family: 'Georgia';
-    font-weight: normal;
-    color: #3e4546;
-    font-size: 15pt;
-    letter-spacing: 2px;
 
-}
-
-h6, h5{
-    font: 12pt 'Roboto Light', sans-serif;
-    color: #3e4546;
-    letter-spacing: 1px;
-}
-
-h5{
-    font-size: 15pt;
-}
-
-h5::after{
-    content: "UAH";
-    font-size: 12pt;
-}
-
-h6{
-    margin-bottom: 12pt;
-}
 
 /*End Global Elements*/
 
-.product-item__main-content{
-    display: block;
-}
-
-.product-item__main-content_heart,
-.product-item__main-content_info {
-    cursor: pointer;
-    position: absolute;
-    z-index: 20;
-    top: 15px;
-    left: 300px;
-}
-
-.product-item__main-content_info {
-    top: 50px;
-    left: 301px;
-    z-index: 2;
-}
-
-    .product-item__main-content_info .info_img {
-        background: url(../../public/img/info.png) no-repeat center;
-        display: block;
-        width: 22px;
-        height: 22px;
-    }
-
-        .product-item__main-content_info .info_img:hover {
-            background: url(../../public/img/info-2.png) no-repeat center;
-        }
-
-
-.product-item__main-content_heart .heart {
-    background: url(../../public/img/heart.png) no-repeat center;
-    display: block;
-    width: 24px;
-    height: 22px;
-}
-
-    .product-item__main-content_heart .heart:hover,
-    .heart .selected{
-        background: url(../../public/img/heart-hover.png) no-repeat center;
-    }
-
 .new-products {
     margin-top: 55px;
-}
-
-.product-item {
-    position: relative;
-    max-width: 340px;
-    width: 100%;
-    height: 345px;
-    margin: 0px auto;
-}
-
-.product-item hr{
-    border: 1px solid #e8ebef;
-    margin: 18px 0 9px 0;
-}
-
-.product-item_container{
-    outline: none;
-}
-
-.product-item__description{
-    display: none;
-    background: #f7f8f8;
-    height: -moz-calc(100% - 20px);
-    height: -webkit-calc(100% - 20px);
-    height: calc(100% - 20px);
-    padding: 10px;
-}
-
-.product-item__description h4{
-    word-wrap: break-word;
-}
-
-.product-item__main-content_close_info{
-    float: right;
-}
-
-.product-item__main-content_close_info img{
-    border: 1px solid transparent;
-    padding: 3px 2px 3px 2px;
-}
-
-.product-item__main-content_close_info img:hover{
-    border: 1px solid #595657;
-    cursor: pointer;
 }
 
 .new-products__carousel{
@@ -185,15 +70,18 @@ h6{
 .slick-dots li button:before {
  content:"";
 }
+
 .slick-dots li button {
     width: 12px;
     height: 12px;
     margin: auto;
- background:#898f90;
+    background:#898f90;
 }
+
 li.slick-active button {
- background:#3e4546;
+    background:#3e4546;
 }
+
 .slick-dots {
     position: absolute;
     display: block;
@@ -204,7 +92,7 @@ li.slick-active button {
     list-style: none;
     text-align: center;
     bottom: inherit;
-    }
+}
 
 /*End Product Caurusel*/
 
@@ -233,7 +121,7 @@ li.slick-active button {
 }
 
 /*End first Outlet*/
-.categories__grid div{   
+.categories__grid div{
     position:relative;
 }
 
@@ -448,7 +336,6 @@ about__item_img div{
     font-size: 175%;
 }
 
-
 .contacts__cities_kyiv:nth-child(2) > h4{
     color: white;
 }
@@ -517,7 +404,7 @@ form .neat-textarea:-ms-input-placeholder{
 }
 
 form .neat-textarea:focus{
-  line-height: 15pt;
+    line-height: 15pt;
 }
 
 form .neat-button{
@@ -541,19 +428,19 @@ form .neat-button:hover{
 }
 
 .neat-input::-webkit-input-placeholder {
-   text-align: center;
+    text-align: center;
 }
 
 .neat-input:-moz-placeholder { /* Firefox 18- */
-   text-align: center;  
+    text-align: center;
 }
 
 .neat-input::-moz-placeholder {  /* Firefox 19+ */
-   text-align: center;  
+    text-align: center;
 }
 
-.neat-input:-ms-input-placeholder {  
-   text-align: center; 
+.neat-input:-ms-input-placeholder {
+    text-align: center; 
 }
 
 /*End Feedback*/
@@ -573,8 +460,6 @@ form .neat-button:hover{
         width: 100%;
         height: auto;
     }
-
-
 }
 
 @media screen and (max-width: 1370px){
@@ -583,10 +468,10 @@ form .neat-button:hover{
     }
 
     .categories__grid div:hover>a::after {
-    left: 10%;
-    right: 10%;
-    top: 10%;
-    bottom: 10%;
+        left: 10%;
+        right: 10%;
+        top: 10%;
+        bottom: 10%;
     }
 
     .about__item_img span{
@@ -602,7 +487,7 @@ form .neat-button:hover{
     }
 
     .about__item > p:nth-child(2){
-            margin-top: 10px;
+        margin-top: 10px;
     }
 }
 
@@ -689,38 +574,8 @@ form .neat-button:hover{
         margin-bottom: 30px;
     }
 
-    .product-item_container{
-        width: 50vw;
-    }
-
-    .product-item{
-        width: 95%;
-        height: 50vw;
-    }
-
     .slick-slide img {
         width: 100%;
-    }
-
-    .product-item__main-content_close_info img{
-        width: inherit;
-    }
-
-    .product-item__main-content_heart,
-    .product-item__main-content_info {
-        left: 85%;
-    }
-
-    .product-item__description h4{
-        font-size: 12pt;
-    }
-
-    .product-item__description h6{
-        font-size: 9pt;
-    }
-
-    .product-item__description p{
-        font-size: 9pt;
     }
 
     .categories__grid{
@@ -753,8 +608,8 @@ form .neat-button:hover{
     }
 
     .categories h2 {
-    margin-top: 30px;
-    margin-bottom: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .about h2 {
@@ -820,35 +675,10 @@ form .neat-button:hover{
     }
 }
 
-@media screen and (max-width: 550px){
-    .product-item{
-        height: 60vw;
-    }
 
-
-    .product-item__description h4{
-        font-size: 10pt;
-    }
-
-    .product-item__description h6{
-        font-size: 7pt;
-    }
-
-    .product-item__description p{
-        font-size: 7pt;
-    }
-}
 
 @media screen and (max-width: 485px){
     form .neat-input:first-child {
         margin-right: 0px;
-    }
-
-    .product-item__description h4{
-        font-size: 9pt;
-    }
-
-    .product-item__description h6{
-        font-size: 6pt;
     }
 }

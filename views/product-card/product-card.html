@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Freedom Outlet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../public/css/global.css" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/product-header.css" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/product-card.css" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/product-item.css" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/footer.css" />
+    <link href="../../public/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../../public/img/favicon.ico" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../public/js/slick-1.6.0/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../../public/js/slick-1.6.0/slick/slick-theme.css" />
+    <script type="text/javascript" src="../../public/js/slick-1.6.0/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="product-header">
+            <a href="/" id="product-header__logo"></a>
+            <div id="product-header__wrapper">
+                <nav id="header__categories-nav">
+                    <ul>
+                        <li><a href="/products/kitchen">КУХНИ</a></li>
+                        <li><a href="/products/bedroom">СПАЛЬНИ</a></li>
+                        <li><a href="/products/soft">МЯГКАЯ</a></li>
+                        <li><a href="/products/living">ГОСТИНЫЕ</a></li>
+                        <li><a href="/products/dining">СТОЛОВЫЕ</a></li>
+                        <li><a href="/products/chandelier">ЛЮСТРЫ</a></li>
+                        <li><a href="/products/sanitary">САНТЕХНИКА</a></li>
+                        <li><a href="/products/accessories">АКСЕССУАРЫ</a></li>
+                    </ul>
+                </nav>
+                <input id="search_box" type="text" placeholder="Поиск" />
+                <a href="#" class="mobile_menu"></a>
+            </div>
+            <a href="#" id="product-headr__actions"></a>
+            <a href="#" id="product-headr__favorites"></a>
+        </div>
+    </header>
+    <!--End Header-->
+    <section class="path">
+        <ul>
+            <li>Главная</li>
+            <li>/</li>
+            <li>Люстры</li>
+            <li>/</li>
+            <li>Visionare</li>
+        </ul>
+    </section>
+    <!--End Path-->
+    <section class="product-card">
+        <div class="product-card__carousel">
+            <div class="product-card__carousel_img">
+                <img src="../../public/img/galery/Galery0.jpg" />
+            </div>
+            <div class="product-card__carousel_img">
+                <img src="../../public/img/galery/Galery0.jpg" />
+            </div>
+            <div class="product-card__carousel_img">
+                <img src="../../public/img/galery/Galery0.jpg" />
+            </div>
+            <div class="product-card__carousel_img">
+                <img src="../../public/img/galery/Galery0.jpg" />
+            </div>
+        </div>
+        <!--End Carousel-->
+        <div class="product-card__parametrs">
+            <h4>Люстра</h4>
+            <h6>IPE Cavalli, Visionnaire</h6>
+            <h6>Италия</h6>
+            <h6>Artegal</h6>
+            <h6>130x70хH.65</h6>
+            <h6>102 000 uah</h6>
+            <h5>Снижение с 138 000</h5>
+            <button>Купить в один клик</button>
+            <div class="product-card__actions">
+                <a href="#" class="product-card__actions_3D"></a>
+                <a href="#" class="product-card__actions_inst"></a>
+                <a href="#" class="product-card__actions_face"></a>
+                <a href="#" class="product-card__actions_pint"></a>
+            </div>
+            <h6>Связаться с нами</h6>
+            <h6>Наличие в магазинах</h6>
+            <p>FREEDOM ул. Веснина, 5 +38 057 757 44 00 +38 067 571 75 66</p>
+        </div>
+    </section>
+    <div class="product-card_description">
+        <h4>Описание</h4>
+        <p>Итальянская кухня Islamorada от фабрики Marchi Group выполнена в истинно прованском стиле: тёплые, мягкие цвета и
+            витающие ароматы французских лугов.</p>
+    </div>
+    <!--End Product-Card-->
+    <h2>Больше от этого производителя</h2>
+    <section class="more">
+        <div class="product-item">
+            <div id="content_10" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(10)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+            </div>
+            <div id="description_10" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(10)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_10" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(10)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+            </div>
+            <div id="description_10" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(10)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_10" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(10)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+            </div>
+            <div id="description_10" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(10)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_10" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(10)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+            </div>
+            <div id="description_10" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(10)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_10" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(10)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+            </div>
+            <div id="description_10" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(10)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_10" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(10)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+            </div>
+            <div id="description_10" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(10)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_10" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(10)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+            </div>
+            <div id="description_10" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(10)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div id="content_10" class="product-item__main-content">
+                <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                </span>
+                <span class="product-item__main-content_info" onclick="toggle_visibility(10)">
+                        <span class="info_img"></span>
+                </span>
+                <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                <hr />
+                <h4>Диван</h4>
+                <h6>AGATHA</h6>
+                <h5>89 000</h5>
+            </div>
+            <div id="description_10" class="product-item__description">
+                <span class="product-item__main-content_close_info" onclick="toggle_visibility(10)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                <h4>@{product.name}</h4>
+                <h6>@{product.manufacturer}</h6>
+                <p>@{product.description}</p>
+            </div>
+        </div>
+    </section>
+    <a href="#" class="all">Смотреть все</a>
+    <!--End More-->
+    <h2>Вам так же понравится</h2>
+    <div class="more-products__carousel">
+        <div class="more-products__carousel_item">
+            <div class="product-item_container">
+                <div class="product-item">
+                    <div id="content_10" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(10)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_10" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(10)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item_container">
+                <div class="product-item">
+                    <div id="content_1" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_1" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item_container">
+                <div class="product-item">
+                    <div id="content_1" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_1" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item_container">
+                <div class="product-item">
+                    <div id="content_1" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_1" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item_container">
+                <div class="product-item">
+                    <div id="content_1" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_1" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item_container">
+                <div class="product-item">
+                    <div id="content_1" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_1" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item_container">
+                <div class="product-item">
+                    <div id="content_1" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_1" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item_container">
+                <div class="product-item">
+                    <div id="content_1" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_1" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item_container">
+                <div class="product-item">
+                    <div id="content_1" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_1" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item_container">
+                <div class="product-item">
+                    <div id="content_1" class="product-item__main-content">
+                        <span class="product-item__main-content_heart">
+                        <span class="heart"></span>
+                        </span>
+                        <span class="product-item__main-content_info" onclick="toggle_visibility(1)">
+                        <span class="info_img"></span>
+                        </span>
+                        <a href="/product/@{product.id}"><img src="../../public/img/title_img_src.png"></a>
+                        <hr />
+                        <h4>Диван</h4>
+                        <h6>AGATHA</h6>
+                        <h5>89 000</h5>
+                    </div>
+                    <div id="description_1" class="product-item__description">
+                        <span class="product-item__main-content_close_info" onclick="toggle_visibility(1)">
+                            <img src="../../public/img/cross.png" />
+                        </span>
+                        <h4>@{product.name}</h4>
+                        <h6>@{product.manufacturer}</h6>
+                        <p>@{product.description}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Like-->
+    <footer>
+        <div class="footer__wrapper">
+            <a href="/" class="footer__logo"></a>
+            <ul class="footer__products">
+                <li><a href="/products/kitchen">КУХНИ</a></li>
+                <li><a href="/products/bedroom">СПАЛЬНИ</a></li>
+                <li><a href="/products/soft">МЯГКАЯ</a></li>
+                <li><a href="/products/living">ГОСТИНЫЕ</a></li>
+                <li><a href="/products/dining">СТОЛОВЫЕ</a></li>
+                <li><a href="/products/chandelier">ЛЮСТРЫ</a></li>
+                <li><a href="/products/sanitary">САНТЕХНИКА</a></li>
+                <li><a href="/products/accessories">АКСЕССУАРЫ</a></li>
+            </ul>
+            <ul class="footer__contacts">
+                <li><a href="/about" class="header__about-nav_current">О КОМПАНИИ</a></li>
+                <li><a href="/idea-for-home">ИДЕИ ДЛЯ ДОМА</a></li>
+                <li><a href="/contacts">КОНТАКТЫ</a></li>
+            </ul>
+            <div class="footer__wrapper_right-section">
+                <p class="fulljustify">ПЕРВЫЙ МЕБЕЛЬНЫЙ</p>
+                <p class="fulljustify">OUTLET В УКРАИНЕ</p>
+                <ul class="footer__social">
+                    <a href="#">
+                        <li class="footer__social_instagram"></li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__social_facebook"></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.product-card__carousel').slick({
+            infinite: true,
+            centerMode: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            arrows: true,
+            centerPadding: 0
+        });
+        $('.more-products__carousel_item').slick({
+            infinite: true,
+            // centerMode: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            dots: false,
+            arrows: true,
+            centerPadding: 0,
+            responsive: [
+                {
+                    breakpoint: 1380,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 720,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        dots: false
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(window).resize(function () {
+        var search_box = $("#search_box");
+        var width = window.innerWidth;
+
+        if (width > 562) {
+            search_box.css("display", "flex");
+        }
+    });
+
+    $(document).ready(function () {
+        $(".mobile_menu").click(function () {
+            if (window.innerWidth > 560) {
+                $("#header__categories-nav").toggle();
+            } else {
+                $("#header__categories-nav").toggle();
+                $("#search_box").toggle();
+            }
+        });
+
+        $(".filters__select_type-btn").click(function () {
+            $(".filters__select_type ul").toggle();
+        });
+
+        $(".filters__select_quantity-btn").click(function () {
+            $(".filters__select_quantity ul").toggle();
+        });
+    });
+
+    function toggle_visibility(id) {
+        var content = document.getElementById("content_" + id);
+        var description = document.getElementById("description_" + id);
+        if (content.style.display === 'block' || content.style.display === '') {
+            content.style.display = 'none';
+            description.style.display = 'block';
+        }
+        else {
+            content.style.display = 'block';
+            description.style.display = 'none';
+        }
+    }
+</script>
+</html>
