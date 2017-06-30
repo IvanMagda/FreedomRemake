@@ -40,6 +40,7 @@ h2:after {
 
 .path{
     margin-top: 55px;
+    margin-bottom: 55px;
 }
 
 .path ul{
@@ -60,6 +61,196 @@ h2:after {
 }
 
 /*End Path*/
+
+.product-card{
+    width: 100%;
+    max-width: 1435px;
+    display: flex;
+    margin: auto;
+}
+
+.product-card__carousel{
+    width: 100%;
+    max-width: 1075px;
+    margin: auto;
+}
+.product-card__carousel.slick-slider{
+    height: 650px;
+}
+.product-card__carousel.slick-slider,.more-products__carousel_item.slick-slider{display: flex;}
+
+.angle-right.slick-arrow,
+.angle-left.slick-arrow{
+    display: flex;
+    width: 13px;
+    height: 22px;
+    min-width: 28px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    margin: auto;
+}
+
+.angle-left{
+    background: url(../img/product/paging_left.png) no-repeat left;
+}
+.angle-left:hover{
+    opacity: 0.75;
+}
+
+.angle-right{
+    background: url(../img/product/paging_right.png) no-repeat right;
+}
+.angle-right:hover{
+    opacity: 0.75;
+}
+.slick-track{height: 100%}
+.slick-slide img{
+    height: 100%;
+    width: auto;
+    margin: auto;
+    outline: none;
+}
+
+.product-card__carousel_img{
+    outline: none;
+}
+
+.product-card__parametrs{
+    margin-left: 25px;
+    border: 1px solid #9ba3aa;
+    padding: 25px 25px 25px 30px;
+}
+
+.product-card__parametrs_name{
+    color: #2a2a2a;
+}
+
+.product-card__parametrs_manufacturer,
+.product-card__parametrs_series,
+.product-card__parametrs_price{
+    margin: 0px;
+}
+
+.product-card__parametrs_country,
+.product-card__parametrs_manufacturer{
+    color: #898f90;
+}
+
+.product-card__parametrs_country,
+.product-card__parametrs_discount{
+    margin-bottom: 25px;
+    text-transform: none;
+    font-size: 15pt;
+}
+
+.product-card__parametrs_dimensions{
+    margin-bottom: 40px;
+    font-size: 15pt;
+    margin-top: 5px;
+    text-transform: none;
+}
+
+.product-card__parametrs_price{
+    font-size: 15pt;
+    font-family: 'Roboto Medium', sans-serif;
+}
+
+.product-card__parametrs_discount{
+    font-style: italic;
+    color: #9ba3aa;
+}
+
+.product-card__parametrs_price::after,
+.product-card__parametrs_discount::after{
+    content: " UAH";
+    font-size: 12pt;
+}
+
+.product-card__parametrs button{
+    width: 275px;
+    height: 60px;
+    border: 1px solid #404040;
+    background-color: white;
+    margin: 0px auto;
+    font: 15pt 'Roboto Light', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.product-card__actions{
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.product-card__actions_3D,
+.product-card__actions_inst,
+.product-card__actions_face,
+.product-card__actions_pint{
+    text-decoration: none;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    background: url(../img/product/3d.png) no-repeat center;
+    float: left;
+}
+
+.product-card__actions p{
+    display: none;
+}
+
+.product-card__actions_3D:hover + p{
+    display: block;
+    font: 9pt 'Roboto Light', sans-serif;
+    font-style: italic;
+    color: #9ba3aa;
+    width: 130px;
+    height: 60px;
+    box-shadow: 6px 4px 15px -3px lightgrey;
+    margin-left: 40px;
+    margin-top: -15px;
+    position: absolute;
+    background: white;
+    line-height: 16pt;
+}
+
+.product-card__actions_inst{
+    background: url(../img/product/insta.png) no-repeat center;
+    background-size: cover;
+    margin-left: auto;
+}
+.product-card__actions_face{
+    background: url(../img/product/face.png) no-repeat center;
+    background-size: cover;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.product-card__actions_pint{
+    background: url(../img/product/pinter.png) no-repeat center;
+    background-size: cover;
+}
+
+.product-card__parametrs_info{
+    color: #2a2a2a;
+    font: 13pt 'Roboto Medium', sans-serif;
+}
+.product-card__parametrs_info:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.product-card__parametrs p{
+    color: #9ba3aa;
+    white-space: pre;
+    font-style: italic;
+    font-family: 'Roboto Light', sans-serif;
+}
+
+.product-card_description h4{
+    color: #2a2a2a;
+}
 
 .more{
     display: flex;

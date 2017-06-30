@@ -83,19 +83,19 @@ footer li{
 }
 
 .footer__social_instagram{
-    background-image: url(../img/instagram.1.svg);
+    background-image: url(../img/insta.png);
 }
 
 .footer__social_instagram:hover{
-    background-image: url(../img/instagram.svg);
+    background-image: url(../img/insta_hover.png);
 }
 
 .footer__social_facebook{
-    background-image: url(../img/facebook.1.svg);
+    background-image: url(../img/face.png);
 }
 
 .footer__social_facebook:hover{
-    background-image: url(../img/facebook.svg);
+    background-image: url(../img/face_hover.png);
 }
 
 .fulljustify {

@@ -60,34 +60,38 @@
                 <img src="../../public/img/galery/Galery0.jpg" />
             </div>
             <div class="product-card__carousel_img">
-                <img src="../../public/img/galery/Galery0.jpg" />
+                <img src="../../public/img/galery/Galery1.jpg" />
             </div>
             <div class="product-card__carousel_img">
-                <img src="../../public/img/galery/Galery0.jpg" />
+                <img src="../../public/img/galery/Galery2.jpg" />
             </div>
             <div class="product-card__carousel_img">
-                <img src="../../public/img/galery/Galery0.jpg" />
+                <img src="../../public/img/galery/Galery3.jpg" />
             </div>
         </div>
         <!--End Carousel-->
         <div class="product-card__parametrs">
-            <h4>Люстра</h4>
-            <h6>IPE Cavalli, Visionnaire</h6>
-            <h6>Италия</h6>
-            <h6>Artegal</h6>
-            <h6>130x70хH.65</h6>
-            <h6>102 000 uah</h6>
-            <h5>Снижение с 138 000</h5>
-            <button>Купить в один клик</button>
-            <div class="product-card__actions">
-                <a href="#" class="product-card__actions_3D"></a>
-                <a href="#" class="product-card__actions_inst"></a>
-                <a href="#" class="product-card__actions_face"></a>
-                <a href="#" class="product-card__actions_pint"></a>
-            </div>
-            <h6>Связаться с нами</h6>
-            <h6>Наличие в магазинах</h6>
-            <p>FREEDOM ул. Веснина, 5 +38 057 757 44 00 +38 067 571 75 66</p>
+            <h4 class="product-card__parametrs_name">Люстра</h4>
+            <h6 class="product-card__parametrs_manufacturer">IPE Cavalli, Visionnaire</h6>
+            <h6 class="product-card__parametrs_country">Италия</h6>
+            <h6 class="product-card__parametrs_series">Artegal</h6>
+            <h6 class="product-card__parametrs_dimensions">130x70хH.65</h6>
+            <h6 class="product-card__parametrs_price">102 000</h6>
+            <h6 class="product-card__parametrs_discount">Снижение с 138 000</h5>
+                <button>Купить в один клик</button>
+                <div class="product-card__actions">
+                    <a href="#" class="product-card__actions_3D"></a>
+                    <p> Активно только для<br> зарегистрированых<br> пользователей<br></p>
+                    <a href="#" class="product-card__actions_inst"></a>
+                    <a href="#" class="product-card__actions_face"></a>
+                    <a href="#" class="product-card__actions_pint"></a>
+                </div>
+                <h6 class="product-card__parametrs_info">Связаться с нами</h6>
+                <h6 class="product-card__parametrs_info">Наличие в магазинах</h6>
+                <p>FREEDOM 
+ул. Веснина, 5 
++38 057 757 44 00 
++38 067 571 75 66</p>
         </div>
     </section>
     <div class="product-card_description">
@@ -582,7 +586,8 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: false,
-            arrows: true,
+            nextArrow: '<a href="#" class="angle-right"></a>',
+            prevArrow: '<a href="#" class="angle-left"></a>',
             centerPadding: 0
         });
         $('.more-products__carousel_item').slick({
@@ -593,7 +598,8 @@
             autoplay: false,
             autoplaySpeed: 2000,
             dots: false,
-            arrows: true,
+            nextArrow: '<a href="#" class="angle-right"></a>',
+            prevArrow: '<a href="#" class="angle-left"></a>',
             centerPadding: 0,
             responsive: [
                 {
@@ -626,6 +632,7 @@
             ]
         });
     });
+
 </script>
 <script type="text/javascript">
     $(window).resize(function () {
@@ -668,5 +675,7 @@
             description.style.display = 'none';
         }
     }
+
 </script>
+
 </html>
