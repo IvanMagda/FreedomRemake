@@ -18,14 +18,14 @@ h2 {
     font-weight: normal;
     text-align: center;
     color: #3e4546;
-    font-size: 24pt;
-    letter-spacing: 2pt;
+    font-size: 26pt;
+    text-transform: uppercase;
     margin-top: 80px;
     margin-bottom: 30px;
 }
 
 h2:first-letter{
-    font-size: 150%;
+    font-size: 125%;
 }
 
 h2:after {
@@ -122,6 +122,7 @@ h2:after {
     margin-left: 25px;
     border: 1px solid #9ba3aa;
     padding: 25px 25px 25px 30px;
+    max-width: 332px;
 }
 
 .product-card__parametrs_name{
@@ -178,6 +179,11 @@ h2:after {
     font: 15pt 'Roboto Light', sans-serif;
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+
+.product-card__parametrs button:hover{
+    background-color: #404040;
+    color: white;
 }
 
 .product-card__actions{
@@ -248,12 +254,91 @@ h2:after {
     font-family: 'Roboto Light', sans-serif;
 }
 
+.sliderInfo{
+    display: flex;
+    width: 100%;
+    max-width: 1075px;
+    margin: auto;
+    padding-right: 357px;
+    justify-content: center;
+    font-family: 'Roboto Light', sans-serif;
+    color: #9ba3aa;
+    margin-top: 15px;
+    font-size: 13pt;
+}
+
+.product-card_description{
+    width: 100%;
+    max-width: 1075px;
+    margin: auto;
+    padding-right: 357px;
+}
+
 .product-card_description h4{
     color: #2a2a2a;
 }
+
+.product-card_description p{
+    font-family: 'Roboto Light', sans-serif;
+    color: #9ba3aa;
+    font-size: 15pt;
+    text-align: justify;
+}
+
+/*End Product-Card*/
 
 .more{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
+    max-width: 1435px;
+    margin: auto;
 }
+
+.more .product-item{
+    margin: 0;
+    margin-bottom: 65px;
+}
+
+a.all{
+    display: flex;
+    max-width: 275px;
+    width: 100%;
+    margin: auto;
+    height: 60px;
+    border: 1px solid #404040;
+    background-color: white;
+    margin: 0px auto;
+    font: 15pt 'Roboto Light', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #404040;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    line-height: 56px;
+    margin-bottom: 105px;
+}
+
+a.all:hover{
+    background-color: #2a2a2a;
+    color: white;
+}
+
+/*End More*/
+
+.more-products__carousel{
+    width: 100%;
+    max-width: 1350px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.more-products__carousel .angle-right.slick-arrow,
+.more-products__carousel .angle-left.slick-arrow{
+    margin-top: 100px;
+}
+
+/*End Like*/

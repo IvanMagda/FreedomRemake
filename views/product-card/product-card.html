@@ -94,6 +94,7 @@
 +38 067 571 75 66</p>
         </div>
     </section>
+    <span class="sliderInfo"></span>
     <div class="product-card_description">
         <h4>Описание</h4>
         <p>Итальянская кухня Islamorada от фабрики Marchi Group выполнена в истинно прованском стиле: тёплые, мягкие цвета и
@@ -580,6 +581,15 @@
 </body>
 <script type="text/javascript">
     $(document).ready(function () {
+        var status = $('.sliderInfo');
+        var slickElement = $('.product-card__carousel');
+
+        slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+            //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+            var i = (currentSlide ? currentSlide : 0) + 1;
+            status.text(i + ' из ' + slick.slideCount + ' изображений');
+        });
+
         $('.product-card__carousel').slick({
             infinite: true,
             centerMode: true,
@@ -661,6 +671,8 @@
         $(".filters__select_quantity-btn").click(function () {
             $(".filters__select_quantity ul").toggle();
         });
+
+
     });
 
     function toggle_visibility(id) {
