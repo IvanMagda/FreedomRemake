@@ -68,7 +68,10 @@ footer li{
 }
 
 .footer__social a{
+    display: block;
     z-index: 1;
+    min-width: 42px;
+    min-height: 42px;
 }
 
 .footer__social_instagram,
