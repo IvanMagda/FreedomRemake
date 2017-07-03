@@ -32,7 +32,14 @@
                         <li><a href="/products/accessories">АКСЕССУАРЫ</a></li>
                     </ul>
                 </nav>
-                <input id="search_box" type="text" placeholder="Поиск" />
+                <div class="search_holder">
+                    <input id="search_box" type="text" placeholder="Поиск" />
+                    <ul class="search__result">
+                        <li class="search_result_item"><a href='#'><div class="search__result-img"><img src="../../public/img/search_img.png"></div><div class="search__result-text"><h4>Бра</h4><h6>KASKE</h6><h5>102 000</h5></div></a></li>
+                        <li class="search_result_item"><a href='#'><div class="search__result-img"><img src="../../public/img/search_img.png"></div><div class="search__result-text"><h4>Бра</h4><h6>KASKE</h6><h5>102 000</h5></div></a></li>
+                        <li class="search_result_item"><a href='#'><div class="search__result-img"><img src="../../public/img/search_img.png"></div><div class="search__result-text"><h4>Бра</h4><h6>KASKE</h6><h5>102 000</h5></div></a></li>
+                    </ul>
+                </div>
                 <a href="#" class="mobile_menu"></a>
             </div>
             <a href="#" id="product-headr__actions"></a>
@@ -510,7 +517,7 @@
         var search_box = $("#search_box");
         var width = window.innerWidth;
 
-        if (width > 1050) {
+        if (width > 1100) {
             $("#header__categories-nav").css("display", "flex");
         }else{
             $("#header__categories-nav").css("display", "none");
@@ -540,6 +547,14 @@
 
         $(".filters__select_quantity-btn").click(function () {
             $(".filters__select_quantity ul").toggle();
+        });
+
+        $("#search_box").focus(function () {
+            $(".search__result").css("display", "block");
+        });
+
+        $("#search_box").focusout(function () {
+            $(".search__result").css("display", "none");
         });
     });
 
