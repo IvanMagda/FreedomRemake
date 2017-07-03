@@ -510,8 +510,17 @@
         var search_box = $("#search_box");
         var width = window.innerWidth;
 
-        if (width > 562) {
+        if (width > 1050) {
+            $("#header__categories-nav").css("display", "flex");
+        }else{
+            $("#header__categories-nav").css("display", "none");
+        }
+
+        if (width > 560) {
             search_box.css("display", "flex");
+        }else{
+            search_box.css("display", "none");
+            $("#header__categories-nav").css("display", "none");
         }
     });
 

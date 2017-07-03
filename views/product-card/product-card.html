@@ -55,18 +55,26 @@
     </section>
     <!--End Path-->
     <section class="product-card">
-        <div class="product-card__carousel">
-            <div class="product-card__carousel_img">
-                <img src="../../public/img/galery/Galery0.jpg" />
+        <div class="product-card__carousel-block">
+            <div class="product-card__carousel">
+                <div class="product-card__carousel_img">
+                    <img src="../../public/img/galery/Galery0.jpg" />
+                </div>
+                <div class="product-card__carousel_img">
+                    <img src="../../public/img/galery/Galery1.jpg" />
+                </div>
+                <div class="product-card__carousel_img">
+                    <img src="../../public/img/galery/Galery2.jpg" />
+                </div>
+                <div class="product-card__carousel_img">
+                    <img src="../../public/img/galery/Galery3.jpg" />
+                </div>
             </div>
-            <div class="product-card__carousel_img">
-                <img src="../../public/img/galery/Galery1.jpg" />
-            </div>
-            <div class="product-card__carousel_img">
-                <img src="../../public/img/galery/Galery2.jpg" />
-            </div>
-            <div class="product-card__carousel_img">
-                <img src="../../public/img/galery/Galery3.jpg" />
+            <span class="sliderInfo"></span>
+            <div class="product-card_description">
+                <h4>Описание</h4>
+                <p>Итальянская кухня Islamorada от фабрики Marchi Group выполнена в истинно прованском стиле: тёплые, мягкие
+                    цвета и витающие ароматы французских лугов.</p>
             </div>
         </div>
         <!--End Carousel-->
@@ -88,15 +96,12 @@
                 </div>
                 <h6 class="product-card__parametrs_info">Связаться с нами</h6>
                 <h6 class="product-card__parametrs_info">Наличие в магазинах</h6>
-                <p>FREEDOM ул. Веснина, 5 +38 057 757 44 00 +38 067 571 75 66</p>
+                <p>FREEDOM 
+ул. Веснина, 5 
++38 057 757 44 00 
++38 067 571 75 66</p>
         </div>
     </section>
-    <span class="sliderInfo"></span>
-    <div class="product-card_description">
-        <h4>Описание</h4>
-        <p>Итальянская кухня Islamorada от фабрики Marchi Group выполнена в истинно прованском стиле: тёплые, мягкие цвета и
-            витающие ароматы французских лугов.</p>
-    </div>
     <!--End Product-Card-->
     <h2>Больше от этого производителя</h2>
     <section class="more">
@@ -642,8 +647,17 @@
         var search_box = $("#search_box");
         var width = window.innerWidth;
 
-        if (width > 562) {
+        if (width > 1050) {
+            $("#header__categories-nav").css("display", "flex");
+        }else{
+            $("#header__categories-nav").css("display", "none");
+        }
+
+        if (width > 560) {
             search_box.css("display", "flex");
+        }else{
+            search_box.css("display", "none");
+            $("#header__categories-nav").css("display", "none");
         }
     });
 
