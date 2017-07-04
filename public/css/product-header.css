@@ -53,7 +53,7 @@ header {
     justify-content: space-between;
 }
 
-#header__categories-nav{
+.header__categories-nav{
     max-width: 675px;
     width: 100%;
     display: flex;
@@ -61,7 +61,7 @@ header {
     z-index: 3;
 }
 
-#header__categories-nav ul {
+.header__categories-nav ul {
     list-style-type: none;
     width: 100%;
     max-width: 675px;
@@ -70,18 +70,20 @@ header {
     margin: auto;
 }
 
-#header__categories-nav ul li{
+.header__categories-nav_list li{
     float:left;
 }
 
-#header__categories-nav ul li a {
+.header__categories-nav_list li a {
     color:#fff;
     text-decoration:none;
     font-size: 12px;
     letter-spacing: 0px;
+    background-color: #2a2a2a;
+    cursor: pointer;
 }
 
-#header__categories-nav ul li a:hover {
+.header__categories-nav_list li a:hover{
     padding-bottom: 14px;
     border-bottom: 4px solid #ed1c24;
 }
@@ -184,6 +186,7 @@ header {
 
 .search__result-text h4{
     font-size: 13px;
+    letter-spacing: 0px;
 }
 
 .search__result-text h4::first-letter{
@@ -201,6 +204,92 @@ header {
     font-weight: bolder;
 }
 
+.sub-dir_box{
+    position: absolute;
+    display: flex;
+    background-color: white;
+    box-shadow: 5px 10px 20px 3px #2a2a2a;
+    width: 425px;
+    height: 190px;
+    padding: 30px;
+    z-index: 4;
+    transform: translate(-449px, 20px);
+}
+
+.sub-dir_box.kitchen{
+    transform: translate(-446px, 20px);
+}
+.sub-dir_box.bedroom{
+    transform: translate(-428px, 20px);
+}
+.sub-dir_box.soft{
+    transform: translate(-437px, 20px);
+}
+.sub-dir_box.living{
+    transform: translate(-422px, 20px);
+}
+.sub-dir_box.dining{
+    transform: translate(-422px, 20px);
+}
+.sub-dir_box.chandelier{
+    transform: translate(-456px, 20px);
+}
+.sub-dir_box.sanitary{
+    transform: translate(-408px, 20px);
+}
+.sub-dir_box.accessories{
+    transform: translate(-408px, 20px);
+}
+
+.sub-dir_img{
+    width: 185px;
+    height: 120px;
+}
+.sub-dir_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.sub-dir_categories{
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul.sub-dir_links{
+    margin-bottom: auto;
+    margin-top: 0px;
+}
+
+.sub-dir_links li a{
+    font-size: 12px;
+    color: #2a2a2a;
+    text-decoration: none;
+    background: white;
+}
+.sub-dir_links li a:hover{
+    text-decoration: underline;
+    padding: none;
+    border: 0px solid transparent;
+}
+
+div.sub-dir_categories > a{
+    font-size: 12px;
+    color: #ed1c24;
+    margin-top: auto;
+    background-color: white;
+    text-decoration: underline;
+}
+
+div.sub-dir_categories > a:hover{
+    padding: 0px;
+    border: 0px solid transparent;
+}
+
+.sub-dir_links{
+    flex-direction: column;
+}
+
 /*----------------------- Media ------------*/
 
 @media screen and (max-width: 1475px){
@@ -208,7 +297,7 @@ header {
         margin-right: 10px;
     }
 
-    #header__categories-nav ul{
+    .header__categories-nav ul{
         margin: auto 10px;
     }
 
@@ -239,13 +328,13 @@ header {
         min-width: 0px;
     }
 
-    #header__categories-nav{
+    .header__categories-nav{
         display: none;
         position: absolute;
         max-width: calc(100% - 219px);
     }
 
-    #header__categories-nav ul {
+    .header__categories-nav ul {
         margin-left: auto;
         margin-right: 0px;
         flex-direction: column;
@@ -254,7 +343,7 @@ header {
         margin-top: 42px;
     }
 
-    #header__categories-nav ul li a{
+    .header__categories-nav ul li a{
         padding-left: 9px;
         width: 101px;
         height: 19px;
@@ -262,7 +351,7 @@ header {
         line-height: 20px;
     }
 
-    #header__categories-nav ul li a:hover{
+    .header__categories-nav ul li a:hover{
         padding-left: 5px;
         padding-bottom: 0px;
         border-bottom: 0px solid #ed1c24;
@@ -297,19 +386,19 @@ header {
         margin-top: 22px;
     }
 
-    #header__categories-nav{
+    .header__categories-nav{
         margin-top: 202px;
         margin-left: calc(100% - 423px);
         background-color: #2a2a2a;
         max-width: 309px;
     }
 
-    #header__categories-nav ul{
+    .header__categories-nav ul{
         max-width: 204px;
         margin-left: 0px;
     }
 
-    #header__categories-nav ul li a{
+    .header__categories-nav ul li a{
         width: 201px;
     }
 
