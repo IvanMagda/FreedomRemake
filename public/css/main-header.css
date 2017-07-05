@@ -74,6 +74,7 @@ header {
     background-repeat: no-repeat;
     width: 100%;
     max-width: 245px;
+    z-index: 1;
 }
 
 #search_box::-webkit-input-placeholder { 
